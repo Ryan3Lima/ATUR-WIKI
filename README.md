@@ -9,3 +9,16 @@
 </p>
 
 To Learn more about this project and access project resources click on the Wiki Tab of this repository.
+
+## adding literature
+1. Download Anaconda to your computer
+2. clone the github directory
+3. Navigate to the github directory on your computer
+4. create the conda environment using the ATUR_WIKI.yml file provided
+5. Install the Conda environment
+6. Activate the Conda Environment
+7. Run jupyter notebooks
+8. Add your .bib file to the literature folder in the correct respective subteam folder
+9. Specify the path to the YourNewEntry.bib file
+10. Run the code
+11. Copy the Mrkdown output into the Wiki section, mind the \n figures and remove quotes, do not include headers
