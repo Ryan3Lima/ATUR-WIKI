@@ -12,7 +12,12 @@ To Learn more about this project and access project resources click on the Wiki 
 
 ## Adding literature to Lit Tables
 1. Download Anaconda to your computer
+Follow the instructions here: [Anaconda installation instructions] (https://docs.anaconda.com/free/anaconda/install/index.html)
 2. clone the github directory
+  - Open Anaconda Prompy shell
+```sh
+git clone 'https://github.com/Ryan3Lima/ATUR-WIKI.git'
+```
 3. Navigate to the github directory on your computer
 ```sh
 cd 'your/local/copy/of/git/dir'
