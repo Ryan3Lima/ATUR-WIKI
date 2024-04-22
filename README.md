@@ -27,6 +27,8 @@ conda activate ATUR_WIKI.yml
 ```
 6. Run jupyter notebooks
 ```
+jupyter notebook
+```
 7. Add your .bib file to the literature folder in the correct respective subteam folder
 8. Specify the path to the YourNewEntry.bib file
 9. Run the code
