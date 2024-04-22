@@ -9,9 +9,9 @@
 </p>
 
 To Learn more about this project and access project resources click on the Wiki Tab of this repository.
-
+<p align="center">
 <img src="https://github.com/Ryan3Lima/ATUR-WIKI/blob/main/ATUR-Pictures/Recipe%20Concept.png" alt="UofA Logo" width="600"/>
-
+</p>
 
 ## Adding literature to Lit Tables
 1. Download Anaconda to your computer
