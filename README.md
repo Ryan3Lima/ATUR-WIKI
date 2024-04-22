@@ -22,3 +22,7 @@ To Learn more about this project and access project resources click on the Wiki 
 9. Specify the path to the YourNewEntry.bib file
 10. Run the code
 11. Copy the Mrkdown output into the Wiki section, mind the \n figures and remove quotes, do not include headers
+
+### useful links
+- [Managing Conda Environments](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
+- 
