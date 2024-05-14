@@ -15,7 +15,7 @@ Capturing this water before it escapes to the atmosphere and encouraging it to p
 </p>
 
 
-To Learn more about this project and access project resources click on the Wiki Tab of this repository.
+**To Learn more about this project and access project resources click on the [Wiki Tab](https://github.com/Ryan3Lima/ATUR-WIKI/wiki) of this repository.**
 
 
 <p align="center">
