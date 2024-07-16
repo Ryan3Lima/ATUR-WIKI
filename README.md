@@ -10,7 +10,7 @@ Capturing this water before it escapes to the atmosphere and encouraging it to p
 
 **To Learn more about this project and access project resources click on the [Wiki Tab](https://github.com/Ryan3Lima/ATUR-WIKI/wiki) of this repository.**
 
-
+Our goal is to create data which is ethical, reproducable, and collaborate: To learn more about the template we chose to follow see [The Turing Way](https://book.the-turing-way.org/index.html)
 
 
 
