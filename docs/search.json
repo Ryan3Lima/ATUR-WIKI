@@ -56,6 +56,13 @@
     "text": "3 Getting Started\nIn the next notebook I will describe how to setup this ecosystem on your computer. Specifically using Python, Anaconda, Jupyter notebooks, Github and Quarto\n\n\n\n\n\n\nNote\n\n\n\nPerhaps someone else can demonstrate an R-studio workflow and Cyverse integration\n\n\nlink to next page"
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to ATUR-WIKI",
+    "section": "",
+    "text": "Welcome to ATUR-WIKI\nThis is the home page of your Quarto website."
+  },
+  {
     "objectID": "Notebooks/CreateMkdTablefrombib.html",
     "href": "Notebooks/CreateMkdTablefrombib.html",
     "title": "ATUR-WIKI",
