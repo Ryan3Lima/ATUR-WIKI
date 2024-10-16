@@ -56,6 +56,69 @@
     "text": "3 Getting Started\nIn the next notebook I will describe how to setup this ecosystem on your computer. Specifically using Python, Anaconda, Jupyter notebooks, Github and Quarto\n\n\n\n\n\n\nNote\n\n\n\nPerhaps someone else can demonstrate an R-studio workflow and Cyverse integration\n\n\nlink to next page"
   },
   {
+    "objectID": "Notebooks/Intro_to_GDAL.html",
+    "href": "Notebooks/Intro_to_GDAL.html",
+    "title": "Introduction to GDAL",
+    "section": "",
+    "text": "A short tutorial using GDAL in Python\nGDAL is a translator library for raster and vector geospatial data formates that is released under an MIT style Open Source License by the Open Source Geospatial Foundation. As a library, it presents a single raster abstract data model and single vector abstract data model to the calling application for all supported formates. It also comes with a variety of useful command l ine utilities for data translation and processing.\nGDAL (Geospatial Data Abstraction Library) is an open-source library used for reading, writing, and processing raster and vector geospatial data formats. It supports a wide range of file formats and provides powerful tools for geospatial data manipulation, making it a key tool in GIS, remote sensing, and mapping applications. (description from ChatGPT4o)"
+  },
+  {
+    "objectID": "Notebooks/Intro_to_GDAL.html#how-to-import-gdal",
+    "href": "Notebooks/Intro_to_GDAL.html#how-to-import-gdal",
+    "title": "Introduction to GDAL",
+    "section": "1.1 How to Import GDAL",
+    "text": "1.1 How to Import GDAL\n\n## after running the line above gdal is installed, but you still need to load it\nfrom osgeo import gdal\ngdal.UseExceptions()  # This will enable exceptions."
+  },
+  {
+    "objectID": "Notebooks/Intro_to_GDAL.html#load-some-other-useful-libraries",
+    "href": "Notebooks/Intro_to_GDAL.html#load-some-other-useful-libraries",
+    "title": "Introduction to GDAL",
+    "section": "1.2 Load some other useful libraries",
+    "text": "1.2 Load some other useful libraries\nnumpy\nNumPy is a powerful Python library used for numerical computing. It provides support for large, multi-dimensional arrays and matrices, along with a wide range of mathematical functions to perform operations on these arrays efficiently. (description from ChatGPT4o)\nmatplotlib\nMatplotlib is a popular Python library for creating static, interactive, and animated visualizations. It is particularly useful for generating plots, graphs, and charts from data, making it a key tool for data analysis and visualization. (description from ChatGPT4o)\n\nimport numpy as np\nimport matplotlib.pyplot as plt"
+  },
+  {
+    "objectID": "Notebooks/Intro_to_GDAL.html#python-syntax-tips-f-strings",
+    "href": "Notebooks/Intro_to_GDAL.html#python-syntax-tips-f-strings",
+    "title": "Introduction to GDAL",
+    "section": "3.1 PYTHON SYNTAX TIPS: f-STRINGS",
+    "text": "3.1 PYTHON SYNTAX TIPS: f-STRINGS\nIn Python, f-strings (formatted string literals) are a concise and efficient way to embed expressions inside string literals. Introduced in Python 3.6, they allow you to insert variables or expressions directly within curly braces {} inside a string prefixed by the letter f, which automatically evaluates and formats the expressions.\n\n## f-STRINGS EXAMPLE\n\nname = \"Alice\"\nage = 30\ngreeting = f\"Hello, my name is {name} and I am {age} years old.\"\nprint(greeting)\n\nHello, my name is Alice and I am 30 years old."
+  },
+  {
+    "objectID": "Notebooks/Intro_to_GDAL.html#reading-the-data-into-a-numpy-array",
+    "href": "Notebooks/Intro_to_GDAL.html#reading-the-data-into-a-numpy-array",
+    "title": "Introduction to GDAL",
+    "section": "3.2 Reading the data into a NumPy Array",
+    "text": "3.2 Reading the data into a NumPy Array\n\n# Read the raster band as a NumPy array\nelevation_data = band.ReadAsArray()\n\n# Check the shape of the data\nprint(f\"Data Shape: {elevation_data.shape} 1/3 arcsecond\")\nprint(f\"Min Value: {elevation_data.min()} meters\")\nprint(f\"Max Value: {elevation_data.max()} meters\")\n\n# 1/3 arcsecond raster = 10m x 10m pixel size\n\nData Shape: (3612, 3612) 1/3 arcsecond\nMin Value: 1324.57958984375 meters\nMax Value: 2410.233154296875 meters"
+  },
+  {
+    "objectID": "Notebooks/Intro_to_GDAL.html#get-metadata",
+    "href": "Notebooks/Intro_to_GDAL.html#get-metadata",
+    "title": "Introduction to GDAL",
+    "section": "5.1 Get Metadata",
+    "text": "5.1 Get Metadata\n\n# Get metadata for the dataset\nmetadata = dataset.GetMetadata()\nprint(f\"Metadata: {metadata}\")\n\nMetadata: {'BandDefinitionKeyword': '*', 'DataType': '*', 'AREA_OR_POINT': 'Area'}"
+  },
+  {
+    "objectID": "Notebooks/Intro_to_GDAL.html#getting-specific-pixel-values",
+    "href": "Notebooks/Intro_to_GDAL.html#getting-specific-pixel-values",
+    "title": "Introduction to GDAL",
+    "section": "5.2 Getting Specific Pixel Values",
+    "text": "5.2 Getting Specific Pixel Values\nTo retreive the elevation value at a specific pixel location\n\n# Example: Get the elevation at pixel (500,500)\nx_pixel, y_pixel = 500, 500\nelevation_value = elevation_data[y_pixel,x_pixel]\nprint(f\" Elevation at pixel ({x_pixel},{y_pixel}): {elevation_value} meters\")\n\n Elevation at pixel (500,500): 1695.1978759765625 meters"
+  },
+  {
+    "objectID": "Notebooks/Intro_to_GDAL.html#converting-pixel-coordinates-to-geospatial-coodrinates",
+    "href": "Notebooks/Intro_to_GDAL.html#converting-pixel-coordinates-to-geospatial-coodrinates",
+    "title": "Introduction to GDAL",
+    "section": "5.3 Converting Pixel coordinates to Geospatial Coodrinates",
+    "text": "5.3 Converting Pixel coordinates to Geospatial Coodrinates\nYou can use the GeoTransform to convert from pixel coordinates to real-world coordinates.\n\n# create a function to get geographic coordinates from pixel coordinates\ndef pixel_to_geo(x_pixel, y_pixel, geotransform):\n    x_geo = geotransform[0] + x_pixel * geotransform[1] + y_pixel * geotransform[2]\n    y_geo = geotransform[3] + x_pixel * geotransform[4] + y_pixel * geotransform[5]\n    return x_geo, y_geo\n\n# Example: Convert pixel (500, 500) to geographic coordinates\nx_geo, y_geo = pixel_to_geo(500, 500, geotransform)\nprint(f\"Geographic Coordinates: (W {x_geo} , N {y_geo})\")\n\nGeographic Coordinates: (W -110.86277777808898 , N 34.862777778065904)\n\n\n\n## close dataset\n\ndataset = None"
+  },
+  {
+    "objectID": "Notebooks/Intro_to_GDAL.html#export-raster-as-cloud-optimized-geotiff-cog",
+    "href": "Notebooks/Intro_to_GDAL.html#export-raster-as-cloud-optimized-geotiff-cog",
+    "title": "Introduction to GDAL",
+    "section": "5.4 Export raster as Cloud-optimized-geotiff COG",
+    "text": "5.4 Export raster as Cloud-optimized-geotiff COG\nWhat are COGs and Why should I care?\nA Cloud Optimized GeoTIFF (COG) is a type of GeoTIFF file that has been optimized for efficient access and use in cloud-based environments. It allows users to access and stream portions of the data without needing to download the entire file, making it ideal for large geospatial datasets used in remote sensing, GIS, and mapping applications. Here are the key features and benefits of a COG:\nKey Features: 1. Internal Tiling:\n\nA COG is internally divided into smaller, equally-sized tiles, which allow for selective access to portions of the image. This structure enables the reading of only the necessary tiles for a particular region or zoom level.\n\n\nPyramidal Layers (Overviews):\n\n\nIt contains lower-resolution overviews or pyramids, which allow for quick access and visualization of the data at multiple zoom levels, much like how online map services work.\n\n\nEfficient Metadata Placement:\n\n\nThe metadata (such as georeferencing information and overviews) is placed at the beginning of the file, allowing clients to read metadata quickly without scanning the entire file. This enhances performance when accessing or visualizing the data in cloud environments.\n\n\nHTTP Range Requests:\n\n\nCOGs are designed to work efficiently over HTTP using range requests, meaning that clients can request specific byte ranges of the file to load only necessary data, rather than downloading the entire file. This is crucial for working with very large datasets in cloud storage.\n\n\nBenefits:\n\nEfficient Data Access:\n\n\nWith a COG, only the relevant parts of the image are accessed (e.g., a specific region or zoom level), which reduces data transfer costs and speeds up analysis in cloud environments like Amazon S3 or Google Cloud Storage.\n\n\nCloud-Friendly:\n\n\nCOGs are ideal for cloud-based workflows, enabling on-the-fly processing and analysis directly from cloud storage without the need for data to be downloaded to a local machine.\n\n\nInteroperability:\n\n\nCOGs are still standard GeoTIFF files, meaning they can be read by most GIS and remote sensing software. However, their cloud-optimized structure makes them more efficient for modern, web-based applications.\n\n\nScalability:\n\n\nSince COGs allow for selective data access, they are highly scalable and work well with very large datasets (hundreds of gigabytes or terabytes in size).\n(description from ChatGPT4o)\n\n\nKey Parameters in gdal.TranslateOptions:\n\n\nformat='COG': Specifies the output format as a Cloud Optimized GeoTIFF. TILING_SCHEME=DEFAULT: Ensures the raster is tiled, which is a key requirement for COG. COMPRESS=LZW: Optional compression (e.g., LZW, DEFLATE, or JPEG), which reduces file size without sacrificing much performance. BLOCKSIZE=512: Defines the tile size for internal tiling. Common sizes are 256 or 512 pixels. OVERVIEWS=IGNORE_EXISTING: Ensures overviews are generated from scratch, which are used to improve performance at different zoom levels. BIGTIFF=IF_SAFER: Ensures the file is saved as a BigTIFF if necessary\n\n\n\n# URL of the .tif file\ntif_url = 'https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1/TIFF/historical/n35w111/USGS_1_n35w111_20240402.tif'\n\n# Open the file using GDAL\ndataset = gdal.Open(tif_url)\n\n# Specify output location and filename\noutput_cog = 'Outputs/output_cog.tif'\n\n# Define the options for creating a COG\ntranslate_options = gdal.TranslateOptions(\n    format='COG',  # Set format to COG\n    creationOptions=[\n        'COMPRESS=LZW',  # Optional: Compression to reduce file size\n        'BLOCKSIZE=512',  # Blocksize for internal tiling (e.g., 512x512 tiles)\n        'OVERVIEWS=IGNORE_EXISTING',  # Use this to generate overviews from scratch\n        'BIGTIFF=IF_SAFER'  # Ensures the file is saved as a BigTIFF if necessary\n    ]\n)\n\n# Create the Cloud Optimized GeoTIFF using gdal.Translate\ngdal.Translate(output_cog, dataset, options=translate_options)\n\nprint(f\"COG created at: {output_cog}\")\n\n# Close the dataset\ndataset = None\n\nCOG created at: Outputs/output_cog.tif"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Welcome to ATUR-WIKI",
@@ -65,9 +128,23 @@
   {
     "objectID": "Notebooks/CreateMkdTablefrombib.html",
     "href": "Notebooks/CreateMkdTablefrombib.html",
-    "title": "ATUR-WIKI",
+    "title": "",
     "section": "",
     "text": "Read the .bib file(s)\nparse the file’s contents to extract the relevant fields for each BibTeX entry\nGenerate a Markdown string with a table that includes title, journal, year, authors, and a placeholder for summaries\noutput the markdown strink so that you can copy it into your github wiki\n\n\nimport os\n\ndef extract_field(entry, field_name):\n    \"\"\"\n    Helper function to extract a field value from a bib entry.\n    \"\"\"\n    start_pattern = field_name + ' = {'\n    end_pattern = '},'\n    start_index = entry.find(start_pattern)\n    if start_index == -1:\n        # Field not found, try alternative pattern\n        start_pattern = field_name + ' = \"'\n        end_pattern = '\",'\n        start_index = entry.find(start_pattern)\n        if start_index == -1:\n            return ''  # Field not found again\n    start_index += len(start_pattern)\n    end_index = entry.find(end_pattern, start_index)\n    field_value = entry[start_index:end_index].strip()\n    # Remove additional curly braces and correct any LaTeX character formatting\n    field_value = field_value.replace('{', '').replace('}', '').replace('\\\\', '')\n    return field_value.replace('\\n', ' ')  # Remove newlines\n\ndef bib_to_markdown_table(file_path):\n    \"\"\"\n    Parse a bib file and create a markdown table with title as a hyperlink, journal, year, authors, DOI, and a summary.\n    \"\"\"\n    with open(file_path, 'r', encoding='utf-8') as file:  # Specify UTF-8 encoding\n        bib_text = file.read()\n\n    # Split the entries\n    entries = bib_text.split('@')[1:]  # Skip the empty split before the first '@'\n    \n    # Prepare the markdown table header\n    markdown_table = \"| Title | Journal | Year | Authors | DOI | Summary |\\n\"\n    markdown_table += \"| --- | --- | --- | --- | --- | --- |\\n\"\n    \n    # Process each entry\n    for entry in entries:\n        title = extract_field(entry, 'title')\n        journal = extract_field(entry, 'journal') or extract_field(entry, 'booktitle')  # Fallback to booktitle if journal is missing\n        year = extract_field(entry, 'year')\n        authors = extract_field(entry, 'author').replace(' and ', ', ')\n        doi = extract_field(entry, 'doi')\n        url = extract_field(entry, 'url')\n        \n        # Format the title as a link if a URL is available\n        title_link = f\"[{title}]({url})\" if url else title\n        \n        # Add the entry to the table\n        markdown_table += f\"| {title_link} | {journal} | {year} | {authors} | {doi} |  |\\n\"\n    \n    return markdown_table\n\n# Path to the .bib file - adjust the path as per your directory structure\nbib_file_path = 'Github/Project_Directory/Literature/Recharge_Subteam/Williams2018.bib'\n\n# Check if the file exists\nif os.path.exists(bib_file_path):\n    # Convert the .bib content to a markdown table and print it\n    markdown_output = bib_to_markdown_table(bib_file_path)\n    print(markdown_output)\nelse:\n    print(\"The specified .bib file does not exist. Please check the file path.\")\n\nThe specified .bib file does not exist. Please check the file path.\n\n\n\nbib_file_path = \"C:/Users/rl587/Documents/GitHub/ATUR-WIKI/Literature/Recharge_Subteam/Williams2018.bib\"\nbib_to_markdown_table(bib_file_path)\n\n'| Title | Journal | Year | Authors | DOI | Summary |\\n| --- | --- | --- | --- | --- | --- |\\n| [Spatial and Temporal Variability of the Impacts of Pinyon and Juniper Reduction on Hydrologic and Erosion Processes Across Climatic Gradients in the Western US: A Regional Synthesis](http://www.mdpi.com/2073-4441/10/11/1607) | Water | 2018 | Williams, C. Jason, Snyder, Keirith A., Pierson, Frederick B. | 10.3390/w10111607 |  |\\n'"
+  },
+  {
+    "objectID": "Notebooks/Intro_to_Rasterio.html",
+    "href": "Notebooks/Intro_to_Rasterio.html",
+    "title": "Introduction to Rasterio",
+    "section": "",
+    "text": "A short tutorial using Rasterio in Python\nRasterio (description from ChatGPT4o)"
+  },
+  {
+    "objectID": "Notebooks/Intro_to_Rasterio.html#display-basic-metadata",
+    "href": "Notebooks/Intro_to_Rasterio.html#display-basic-metadata",
+    "title": "Introduction to Rasterio",
+    "section": "3.1 Display basic metadata",
+    "text": "3.1 Display basic metadata\n\nprint(f\"CRS: {dataset.crs}\")  # Coordinate Reference System\nprint(f\"Bounds: {dataset.bounds}\")  # Spatial extent of the raster\nprint(f\"Width: {dataset.width}, Height: {dataset.height}\")  # Dimensions\nprint(f\"Number of bands: {dataset.count}\")\n\nCRS: EPSG:4269\nBounds: BoundingBox(left=-111.00166666698249, bottom=33.998333332817936, right=-109.99833333361585, top=35.001666667083896)\nWidth: 3612, Height: 3612\nNumber of bands: 1"
   },
   {
     "objectID": "Notebooks/Learn_the_workflow/02_Getting_Started.html",

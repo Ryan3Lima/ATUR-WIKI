@@ -2,14 +2,6 @@ project:
   type: website
   output-dir: docs
 
-site:
-  title: "ATUR-WIKI"
-  navbar:
-    title: "ATUR-WIKI"
-    left:
-      - text: "Home"
-        href: index.html
-      - text: "Learn the Workflow"
-        href: Learn_the_workflow/index.html
-
+     
+    
 
