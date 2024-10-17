@@ -1,0 +1,224 @@
+[
+  {
+    "objectID": "Python Geospatial Notebooks/Intro_to_Rasterio.html",
+    "href": "Python Geospatial Notebooks/Intro_to_Rasterio.html",
+    "title": "Introduction to Rasterio",
+    "section": "",
+    "text": "A short tutorial using Rasterio in Python\nRasterio\nis a Python library that simplifies the reading, writing, and processing of geospatial raster data. It provides a user-friendly interface built on top of GDAL, making it easier to work with raster datasets, handle metadata, and perform spatial operations efficiently in Python. (description from ChatGPT4o)",
+    "crumbs": [
+      "Home",
+      "Python Tutorials",
+      "Python Geospatial Notebooks",
+      "Introduction to Rasterio"
+    ]
+  },
+  {
+    "objectID": "Python Geospatial Notebooks/Intro_to_Rasterio.html#display-basic-metadata",
+    "href": "Python Geospatial Notebooks/Intro_to_Rasterio.html#display-basic-metadata",
+    "title": "Introduction to Rasterio",
+    "section": "3.1 Display basic metadata",
+    "text": "3.1 Display basic metadata\n\nprint(f\"CRS: {dataset.crs}\")  # Coordinate Reference System\nprint(f\"Bounds: {dataset.bounds}\")  # Spatial extent of the raster\nprint(f\"Width: {dataset.width}, Height: {dataset.height}\")  # Dimensions\nprint(f\"Number of bands: {dataset.count}\")\n\nCRS: EPSG:4269\nBounds: BoundingBox(left=-111.00166666698249, bottom=33.998333332817936, right=-109.99833333361585, top=35.001666667083896)\nWidth: 3612, Height: 3612\nNumber of bands: 1",
+    "crumbs": [
+      "Home",
+      "Python Tutorials",
+      "Python Geospatial Notebooks",
+      "Introduction to Rasterio"
+    ]
+  },
+  {
+    "objectID": "Literature/Ecohydrology.html",
+    "href": "Literature/Ecohydrology.html",
+    "title": "Arizona Ecohydrology",
+    "section": "",
+    "text": "This review of literature focuses on the effects of thinning on forests similar to those found in Northern Arizona\nSynthesized text\nForest treatments such as thinning and burning can have significant effects on the hydrologic cycle of forests (Del Campo et al., 2022).\nHowever the response of forests to treatment are complex, site-specific, forest-type specific and vary with aspect, elevation, treatment-level, post-treatment structure, and climatic conditions (Del Campo et al., 2022;Biederman et al., 2022;Zou et al., 2010).\nFurthermore the relation between forest cover and streamflow reponse is complex and nonlinear (!Moore and Wondzell, 2005)\nIn the lower Colorado River Basin where average annual precipitation is about 330 mm only about 10mm of that precipitation becomes streamflow (Zou et al., 2010).\nIn the Colorado River Basin there appears to be a precipitation threshold at work. Below ~500mm of annual precipitation, precipitation and runoff may become decoupled (Biederman et al., 2022) likely because below ~500mm most precipitation is evaporated regardless of forest condition (!Hibbert 1979).\nThinning moderate to high density forests can increase water yield by 6.5 - 100mm for several years after forest treatment depending on forest type and pre-treatment density (Zou et al. 2010\nSemi-arid forests with high interannual precipitation variability may show effects in wet years when precipitation is greater than ~500mm (Adams et al., 2012).\nEffects of changes in forest structure on hydrology\nReducing canopy cover reduces canopy interception and makes more water available for runoff (Moreno et al., 2016) and infiltration (Del Campo et al., 2022;Del Campo et al., 2019;Del Campo et al., 2014;Garcia-Prats et al., 2018;Knoche 2005).\nThinning has been shown to increase soil moisture in semi-arid Ponderosa Pine forests–increasing tree growth (BAI) and buffering against the effects of warming temperatures associated with climate change including drought. (!Rodman et al.,(pre-print);(Sankey and Tatum 2022);Belmonte et al., 2022;Sankey et al., 2021).\nReductions in forest density can increase recharge (Moreno et al., 2016;Wyatt 2013)and groundwater levels (Smerdon et al., 2009;Jutras et al., 2006;Stoneman 1993;Ruprecht et al., 1991).\nAmong Catchments where streamflow increased following removal of forest cover, the best predictor of the magnitude of streamflow increase was subsurface storage potential or depth to bedrock (!Evaristo and McDonnel 2019)\n\n\nPost-disturbance water yield will increase based on the assuption that ET will decrease thus making more water available for streamflow (Adams et al., 2012;!Pugh and Gordon 2013)\nLooked at the effect of nonstand-replacing disturbances on ET (!Hicke et al., 2015)\nReduction of canopy cover can increase ET of existing trees, and solar radiation increasing evaporation (!Biederman et al., 2014;!Chen et al., 205;!Bennett et al. 2018) decreases in post-disturbance ET may be offset by increased soil evaporation increasing net ET (!Reed et al. 2016)\nPost-disturbance soil moisture may increase because of decreased transpiration (!Concilio et al. 2009;!Mikkelson et al 2013;!Penn et al 2016;!Saksa et al. 2017;!Reed et al, 2016)\n\n\n\nHydrological processes can be altered significantly through forest thinning but these effects vary with forest type, thinning intensity, and the hydrologic variables of interest (Del Campo et al., 2022Global Review).\nA global review of forest thinning studies found that net precipitation, soil moisture and tree-level water use increases significantly following thinning while decreases in stemflow and transpiration occur. A thinning intensity of 50% of stand density is the threshold over which hydrologic processes are significantly affected. (Del Campo et al., 2022Global Review).\nWyatt (!201x) conducted a systemic review of 37 studies of how restoration treatments affect water budgets and found that water yeild can increase 10%-35% when 20% or more of a conifer dominated watershed is thinned. Though no universal water yield response to change in forest cover was found thus regional studies are the best predictor of hydrologic response to thinning.\nA synthesis study of all 4FRI treatments found that thinned and burned forests have significantly greater total ecosystem moisture and are thus more resilient to drought and wildfires (Sankey et al., 2021).\nThinned forests are better buffered against drought impacts in terms of both soil moisture and tree health (Sankey and Tatum 2022)\nSimulation of thinning in the 4FRI area was modeled with the result indicating that forest removal can trigger shifts in hydrological components. Increases in soil evaporation but also groundwater recharge and runoff. Net effect will likely be increases in mean and maximum streamflow particularly in winter months and during El Nino. However thinning can reduce soil hydraulic conductivity and surface soil water storage (Moreno et al., 2016).\n\n\n\nThroughfall = 2.6 to 4.3 years\nSoil Moisture & Transpiration = 3.6 to 8.6 years\n\n(Del Campo et al., 2022Global Review)..\n\nSoil moisture = 2 years at 25 - 50cm depth (Flagstaff)\n\n(Belmonte et al., 2022).\n\n\n\nEven during the most extreme drought in the last 1,200 years, Ponderoa Pine sites that were treated with mechanical thinning or burning had higher Basal Area Increment increases, or grew faster than paired untreated sites in the Southwest USA (!Rodman et al., 2024 manuscript in review) Del Campo (2014) found similar results in semi-arid mediterranean forests.\n\n\n\nThinned forests [around Flagstaff] have higher soil moisture at 25 and 50cm in the first two years post-thinning (Belmonte et al., 2022).\nThinning in semi-arid forests around the mediterranian increased antecedant soil moisture and belowground hydrologic processes and increased deep soil moisture by 50mm/year over the control (Del Campo et al., 2019)\n\n\n\nA review of studies of Forest Management on groundwater resources found that a rise in water table can generally be expected following forest thinning in all forested landscapes (Smerdon et al., 2009 Review)\nA review of 35 studies published from 1971 - 2018 found that thinning was more effective than clear-cutting in terms of increasing groundwater recharge due to reduced sublimation and Evaporation. Springs can be effective at moinitoring groundwater recharge effects in Aridland forests (Schenk et al., 2020).\n\n\n\nThe effects of forest thinning and subsequent snowmelt are highly variable, with responses depending on forest structure and local climate, where thinning in dense and taller vegetation generally increases snow retention, thinning in shorter, less dense forests may decrease retention (Lewis et al., 2023).\nIn semi-arid forested watersheds, thinning can influence streamflow variability by modifying snowpack accumulation and melt, particularly in wetter years where thinning can either reduce or increase snow retention based on site-specific conditions.(Broxton et al., 2023)\nThinning in semi-arid forested watershed can significantly impact streamflow by altering snowmelt timing, with reduce forest cover tending to delay snowmelt at warmer sites while advancing melt at cooler, snowpack-persistent sites (Dwivendi et al., 2024).\nThinned forests around Flagstaff have greater snow persistance at 25%-35% canopy cover (Belmonte et al., 2021)\nThinned forests in Northern Arizona have more snow and soil moisture (O’Donnell et al., 2021)\nFound that thinned and burned vs control forests had varying rates of snowmelt and snow persistence. Canopy cover is most predictive of snow persistance (Donager et al., 2021)\n\n\n\nA review of 94 catchment studies showed that significant changes in water yield are correlated to forest growth in forests that recive 600-1200 mm of mean annual precipitation Bosch and Hewlett, 1982 The caveat being there were not many confierous forests studies in that precipitation range.\nAdams and others 2012 hypotheized that where annual precipitaiton exceeds ~500 \\(mm\\) or water yield is dominated by snowmelt, watershed will experience significantly decreased evapotranspiration and increased flows if canopy cover is reduced by over 20%, however their recent observations suggest that in dry forests water ield may decrease. More research is needed. This paper was focused on tree-die off not thinning.\nCarroll and others (2016) found a threshold hydrologic response when evaluating thinning of a snow-dominated semi-arid Pinyon-Juniper community in the Great Basin. They found that a positive water yield in thinned plots was only observed when precipitation exceeded 400mm annually (wet years)\nBiederman and others (2022) suggests that distrubance will have positive inpacts on streamflow for a minimum of several years following disturbance in areas where mean annual precipitation exceeds ~500mm. “Presumably because below 500 mm, most precipitation is evaporated regardless of forest condition (Hibbert, 1979)\n\n\n\n\nGoeking and others (2020) reviewed the hydrologic response of stand-replacing and non-stand replacing disturbances and found that post-distrubance streamflow may increase, not change, or even decrease. Nonstand replacing fires—because of increased evaporation from higher subcanopy radiation and increased transpiration from rapid post-disturbance growth can decrease water availability in some cases.\nDecreases in available water coinicdent with tree morality are generally observed in areas at low latitudes, and on south facing acpects, in areas with high total radiation and high solar radiation. particularly in non-stand replacing disturbances such as drought, and insect-caused mortality (Goeking et al. 2020).\n\n\n\nBased on a study of Freemont Cottonwoods…Different species of trees, and even different genotypes of trees in the same species transpire different amounts of water (Sankey et al., 2021)",
+    "crumbs": [
+      "Home",
+      "Literature Reviewed",
+      "Literature",
+      "Arizona Ecohydrology"
+    ]
+  },
+  {
+    "objectID": "Literature/Ecohydrology.html#effects-of-disturbance-on-et",
+    "href": "Literature/Ecohydrology.html#effects-of-disturbance-on-et",
+    "title": "Arizona Ecohydrology",
+    "section": "",
+    "text": "Post-disturbance water yield will increase based on the assuption that ET will decrease thus making more water available for streamflow (Adams et al., 2012;!Pugh and Gordon 2013)\nLooked at the effect of nonstand-replacing disturbances on ET (!Hicke et al., 2015)\nReduction of canopy cover can increase ET of existing trees, and solar radiation increasing evaporation (!Biederman et al., 2014;!Chen et al., 205;!Bennett et al. 2018) decreases in post-disturbance ET may be offset by increased soil evaporation increasing net ET (!Reed et al. 2016)\nPost-disturbance soil moisture may increase because of decreased transpiration (!Concilio et al. 2009;!Mikkelson et al 2013;!Penn et al 2016;!Saksa et al. 2017;!Reed et al, 2016)",
+    "crumbs": [
+      "Home",
+      "Literature Reviewed",
+      "Literature",
+      "Arizona Ecohydrology"
+    ]
+  },
+  {
+    "objectID": "Literature/Ecohydrology.html#effects-of-forest-treatment",
+    "href": "Literature/Ecohydrology.html#effects-of-forest-treatment",
+    "title": "Arizona Ecohydrology",
+    "section": "",
+    "text": "Hydrological processes can be altered significantly through forest thinning but these effects vary with forest type, thinning intensity, and the hydrologic variables of interest (Del Campo et al., 2022Global Review).\nA global review of forest thinning studies found that net precipitation, soil moisture and tree-level water use increases significantly following thinning while decreases in stemflow and transpiration occur. A thinning intensity of 50% of stand density is the threshold over which hydrologic processes are significantly affected. (Del Campo et al., 2022Global Review).\nWyatt (!201x) conducted a systemic review of 37 studies of how restoration treatments affect water budgets and found that water yeild can increase 10%-35% when 20% or more of a conifer dominated watershed is thinned. Though no universal water yield response to change in forest cover was found thus regional studies are the best predictor of hydrologic response to thinning.\nA synthesis study of all 4FRI treatments found that thinned and burned forests have significantly greater total ecosystem moisture and are thus more resilient to drought and wildfires (Sankey et al., 2021).\nThinned forests are better buffered against drought impacts in terms of both soil moisture and tree health (Sankey and Tatum 2022)\nSimulation of thinning in the 4FRI area was modeled with the result indicating that forest removal can trigger shifts in hydrological components. Increases in soil evaporation but also groundwater recharge and runoff. Net effect will likely be increases in mean and maximum streamflow particularly in winter months and during El Nino. However thinning can reduce soil hydraulic conductivity and surface soil water storage (Moreno et al., 2016).\n\n\n\nThroughfall = 2.6 to 4.3 years\nSoil Moisture & Transpiration = 3.6 to 8.6 years\n\n(Del Campo et al., 2022Global Review)..\n\nSoil moisture = 2 years at 25 - 50cm depth (Flagstaff)\n\n(Belmonte et al., 2022).\n\n\n\nEven during the most extreme drought in the last 1,200 years, Ponderoa Pine sites that were treated with mechanical thinning or burning had higher Basal Area Increment increases, or grew faster than paired untreated sites in the Southwest USA (!Rodman et al., 2024 manuscript in review) Del Campo (2014) found similar results in semi-arid mediterranean forests.\n\n\n\nThinned forests [around Flagstaff] have higher soil moisture at 25 and 50cm in the first two years post-thinning (Belmonte et al., 2022).\nThinning in semi-arid forests around the mediterranian increased antecedant soil moisture and belowground hydrologic processes and increased deep soil moisture by 50mm/year over the control (Del Campo et al., 2019)\n\n\n\nA review of studies of Forest Management on groundwater resources found that a rise in water table can generally be expected following forest thinning in all forested landscapes (Smerdon et al., 2009 Review)\nA review of 35 studies published from 1971 - 2018 found that thinning was more effective than clear-cutting in terms of increasing groundwater recharge due to reduced sublimation and Evaporation. Springs can be effective at moinitoring groundwater recharge effects in Aridland forests (Schenk et al., 2020).\n\n\n\nThe effects of forest thinning and subsequent snowmelt are highly variable, with responses depending on forest structure and local climate, where thinning in dense and taller vegetation generally increases snow retention, thinning in shorter, less dense forests may decrease retention (Lewis et al., 2023).\nIn semi-arid forested watersheds, thinning can influence streamflow variability by modifying snowpack accumulation and melt, particularly in wetter years where thinning can either reduce or increase snow retention based on site-specific conditions.(Broxton et al., 2023)\nThinning in semi-arid forested watershed can significantly impact streamflow by altering snowmelt timing, with reduce forest cover tending to delay snowmelt at warmer sites while advancing melt at cooler, snowpack-persistent sites (Dwivendi et al., 2024).\nThinned forests around Flagstaff have greater snow persistance at 25%-35% canopy cover (Belmonte et al., 2021)\nThinned forests in Northern Arizona have more snow and soil moisture (O’Donnell et al., 2021)\nFound that thinned and burned vs control forests had varying rates of snowmelt and snow persistence. Canopy cover is most predictive of snow persistance (Donager et al., 2021)\n\n\n\nA review of 94 catchment studies showed that significant changes in water yield are correlated to forest growth in forests that recive 600-1200 mm of mean annual precipitation Bosch and Hewlett, 1982 The caveat being there were not many confierous forests studies in that precipitation range.\nAdams and others 2012 hypotheized that where annual precipitaiton exceeds ~500 \\(mm\\) or water yield is dominated by snowmelt, watershed will experience significantly decreased evapotranspiration and increased flows if canopy cover is reduced by over 20%, however their recent observations suggest that in dry forests water ield may decrease. More research is needed. This paper was focused on tree-die off not thinning.\nCarroll and others (2016) found a threshold hydrologic response when evaluating thinning of a snow-dominated semi-arid Pinyon-Juniper community in the Great Basin. They found that a positive water yield in thinned plots was only observed when precipitation exceeded 400mm annually (wet years)\nBiederman and others (2022) suggests that distrubance will have positive inpacts on streamflow for a minimum of several years following disturbance in areas where mean annual precipitation exceeds ~500mm. “Presumably because below 500 mm, most precipitation is evaporated regardless of forest condition (Hibbert, 1979)",
+    "crumbs": [
+      "Home",
+      "Literature Reviewed",
+      "Literature",
+      "Arizona Ecohydrology"
+    ]
+  },
+  {
+    "objectID": "Literature/Ecohydrology.html#effects-of-fire-on-water-yield",
+    "href": "Literature/Ecohydrology.html#effects-of-fire-on-water-yield",
+    "title": "Arizona Ecohydrology",
+    "section": "",
+    "text": "Goeking and others (2020) reviewed the hydrologic response of stand-replacing and non-stand replacing disturbances and found that post-distrubance streamflow may increase, not change, or even decrease. Nonstand replacing fires—because of increased evaporation from higher subcanopy radiation and increased transpiration from rapid post-disturbance growth can decrease water availability in some cases.\nDecreases in available water coinicdent with tree morality are generally observed in areas at low latitudes, and on south facing acpects, in areas with high total radiation and high solar radiation. particularly in non-stand replacing disturbances such as drought, and insect-caused mortality (Goeking et al. 2020).",
+    "crumbs": [
+      "Home",
+      "Literature Reviewed",
+      "Literature",
+      "Arizona Ecohydrology"
+    ]
+  },
+  {
+    "objectID": "Literature/Ecohydrology.html#evapotranspiration",
+    "href": "Literature/Ecohydrology.html#evapotranspiration",
+    "title": "Arizona Ecohydrology",
+    "section": "",
+    "text": "Based on a study of Freemont Cottonwoods…Different species of trees, and even different genotypes of trees in the same species transpire different amounts of water (Sankey et al., 2021)",
+    "crumbs": [
+      "Home",
+      "Literature Reviewed",
+      "Literature",
+      "Arizona Ecohydrology"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Arizona Tri-University Recharge and Water Reliability Project (ATUR-WRP)",
+    "section": "",
+    "text": "Escalating drought over the past two decades has led to growing concerns regarding water quantity and quality for Arizona’s communities. At the request of the Arizona Department of Water Resources, a team of researchers from the University of Arizona (UArizona), Arizona State University (ASU), and Northern Arizona University (NAU) will study locations and methods for protecting and enhancing groundwater recharge across the state.\nMore than 90% of precipitation that falls as rain and snow in Arizona evaporates before it enters a stream or recharges the groundwater. Capturing this water before it escapes to the atmosphere and encouraging it to percolate into the ground to replenish aquifers (enhanced recharge) can increase water supplies for communities and support ecosystems\nTo Learn more about this project and access project resources click on the Wiki Tab of this repository.\nOur goal is to create data which is ethical, reproducable, and collaborate: To learn more about the template we chose to follow see The Turing Way"
+  },
+  {
+    "objectID": "index.html#about",
+    "href": "index.html#about",
+    "title": "Arizona Tri-University Recharge and Water Reliability Project (ATUR-WRP)",
+    "section": "",
+    "text": "Escalating drought over the past two decades has led to growing concerns regarding water quantity and quality for Arizona’s communities. At the request of the Arizona Department of Water Resources, a team of researchers from the University of Arizona (UArizona), Arizona State University (ASU), and Northern Arizona University (NAU) will study locations and methods for protecting and enhancing groundwater recharge across the state.\nMore than 90% of precipitation that falls as rain and snow in Arizona evaporates before it enters a stream or recharges the groundwater. Capturing this water before it escapes to the atmosphere and encouraging it to percolate into the ground to replenish aquifers (enhanced recharge) can increase water supplies for communities and support ecosystems\nTo Learn more about this project and access project resources click on the Wiki Tab of this repository.\nOur goal is to create data which is ethical, reproducable, and collaborate: To learn more about the template we chose to follow see The Turing Way"
+  },
+  {
+    "objectID": "Python Geospatial Notebooks/Intro_to_GDAL.html",
+    "href": "Python Geospatial Notebooks/Intro_to_GDAL.html",
+    "title": "Introduction to GDAL",
+    "section": "",
+    "text": "A short tutorial using GDAL in Python\nGDAL is a translator library for raster and vector geospatial data formates that is released under an MIT style Open Source License by the Open Source Geospatial Foundation. As a library, it presents a single raster abstract data model and single vector abstract data model to the calling application for all supported formates. It also comes with a variety of useful command l ine utilities for data translation and processing.\nGDAL (Geospatial Data Abstraction Library) is an open-source library used for reading, writing, and processing raster and vector geospatial data formats. It supports a wide range of file formats and provides powerful tools for geospatial data manipulation, making it a key tool in GIS, remote sensing, and mapping applications. (description from ChatGPT4o)",
+    "crumbs": [
+      "Home",
+      "Python Tutorials",
+      "Python Geospatial Notebooks",
+      "Introduction to GDAL"
+    ]
+  },
+  {
+    "objectID": "Python Geospatial Notebooks/Intro_to_GDAL.html#how-to-import-gdal",
+    "href": "Python Geospatial Notebooks/Intro_to_GDAL.html#how-to-import-gdal",
+    "title": "Introduction to GDAL",
+    "section": "1.1 How to Import GDAL",
+    "text": "1.1 How to Import GDAL\n\n## after running the line above gdal is installed, but you still need to load it\nfrom osgeo import gdal\ngdal.UseExceptions()  # This will enable exceptions.",
+    "crumbs": [
+      "Home",
+      "Python Tutorials",
+      "Python Geospatial Notebooks",
+      "Introduction to GDAL"
+    ]
+  },
+  {
+    "objectID": "Python Geospatial Notebooks/Intro_to_GDAL.html#load-some-other-useful-libraries",
+    "href": "Python Geospatial Notebooks/Intro_to_GDAL.html#load-some-other-useful-libraries",
+    "title": "Introduction to GDAL",
+    "section": "1.2 Load some other useful libraries",
+    "text": "1.2 Load some other useful libraries\nnumpy\nNumPy is a powerful Python library used for numerical computing. It provides support for large, multi-dimensional arrays and matrices, along with a wide range of mathematical functions to perform operations on these arrays efficiently. (description from ChatGPT4o)\nmatplotlib\nMatplotlib is a popular Python library for creating static, interactive, and animated visualizations. It is particularly useful for generating plots, graphs, and charts from data, making it a key tool for data analysis and visualization. (description from ChatGPT4o)\n\nimport numpy as np\nimport matplotlib.pyplot as plt",
+    "crumbs": [
+      "Home",
+      "Python Tutorials",
+      "Python Geospatial Notebooks",
+      "Introduction to GDAL"
+    ]
+  },
+  {
+    "objectID": "Python Geospatial Notebooks/Intro_to_GDAL.html#python-syntax-tips-f-strings",
+    "href": "Python Geospatial Notebooks/Intro_to_GDAL.html#python-syntax-tips-f-strings",
+    "title": "Introduction to GDAL",
+    "section": "3.1 PYTHON SYNTAX TIPS: f-STRINGS",
+    "text": "3.1 PYTHON SYNTAX TIPS: f-STRINGS\nIn Python, f-strings (formatted string literals) are a concise and efficient way to embed expressions inside string literals. Introduced in Python 3.6, they allow you to insert variables or expressions directly within curly braces {} inside a string prefixed by the letter f, which automatically evaluates and formats the expressions.\n\n## f-STRINGS EXAMPLE\n\nname = \"Alice\"\nage = 30\ngreeting = f\"Hello, my name is {name} and I am {age} years old.\"\nprint(greeting)\n\nHello, my name is Alice and I am 30 years old.",
+    "crumbs": [
+      "Home",
+      "Python Tutorials",
+      "Python Geospatial Notebooks",
+      "Introduction to GDAL"
+    ]
+  },
+  {
+    "objectID": "Python Geospatial Notebooks/Intro_to_GDAL.html#reading-the-data-into-a-numpy-array",
+    "href": "Python Geospatial Notebooks/Intro_to_GDAL.html#reading-the-data-into-a-numpy-array",
+    "title": "Introduction to GDAL",
+    "section": "3.2 Reading the data into a NumPy Array",
+    "text": "3.2 Reading the data into a NumPy Array\n\n# Read the raster band as a NumPy array\nelevation_data = band.ReadAsArray()\n\n# Check the shape of the data\nprint(f\"Data Shape: {elevation_data.shape} 1/3 arcsecond\")\nprint(f\"Min Value: {elevation_data.min()} meters\")\nprint(f\"Max Value: {elevation_data.max()} meters\")\n\n# 1/3 arcsecond raster = 10m x 10m pixel size\n\nData Shape: (3612, 3612) 1/3 arcsecond\nMin Value: 1324.57958984375 meters\nMax Value: 2410.233154296875 meters",
+    "crumbs": [
+      "Home",
+      "Python Tutorials",
+      "Python Geospatial Notebooks",
+      "Introduction to GDAL"
+    ]
+  },
+  {
+    "objectID": "Python Geospatial Notebooks/Intro_to_GDAL.html#get-metadata",
+    "href": "Python Geospatial Notebooks/Intro_to_GDAL.html#get-metadata",
+    "title": "Introduction to GDAL",
+    "section": "5.1 Get Metadata",
+    "text": "5.1 Get Metadata\n\n# Get metadata for the dataset\nmetadata = dataset.GetMetadata()\nprint(f\"Metadata: {metadata}\")\n\nMetadata: {'BandDefinitionKeyword': '*', 'DataType': '*', 'AREA_OR_POINT': 'Area'}",
+    "crumbs": [
+      "Home",
+      "Python Tutorials",
+      "Python Geospatial Notebooks",
+      "Introduction to GDAL"
+    ]
+  },
+  {
+    "objectID": "Python Geospatial Notebooks/Intro_to_GDAL.html#getting-specific-pixel-values",
+    "href": "Python Geospatial Notebooks/Intro_to_GDAL.html#getting-specific-pixel-values",
+    "title": "Introduction to GDAL",
+    "section": "5.2 Getting Specific Pixel Values",
+    "text": "5.2 Getting Specific Pixel Values\nTo retreive the elevation value at a specific pixel location\n\n# Example: Get the elevation at pixel (500,500)\nx_pixel, y_pixel = 500, 500\nelevation_value = elevation_data[y_pixel,x_pixel]\nprint(f\" Elevation at pixel ({x_pixel},{y_pixel}): {elevation_value} meters\")\n\n Elevation at pixel (500,500): 1695.1978759765625 meters",
+    "crumbs": [
+      "Home",
+      "Python Tutorials",
+      "Python Geospatial Notebooks",
+      "Introduction to GDAL"
+    ]
+  },
+  {
+    "objectID": "Python Geospatial Notebooks/Intro_to_GDAL.html#converting-pixel-coordinates-to-geospatial-coodrinates",
+    "href": "Python Geospatial Notebooks/Intro_to_GDAL.html#converting-pixel-coordinates-to-geospatial-coodrinates",
+    "title": "Introduction to GDAL",
+    "section": "5.3 Converting Pixel coordinates to Geospatial Coodrinates",
+    "text": "5.3 Converting Pixel coordinates to Geospatial Coodrinates\nYou can use the GeoTransform to convert from pixel coordinates to real-world coordinates.\n\n# create a function to get geographic coordinates from pixel coordinates\ndef pixel_to_geo(x_pixel, y_pixel, geotransform):\n    x_geo = geotransform[0] + x_pixel * geotransform[1] + y_pixel * geotransform[2]\n    y_geo = geotransform[3] + x_pixel * geotransform[4] + y_pixel * geotransform[5]\n    return x_geo, y_geo\n\n# Example: Convert pixel (500, 500) to geographic coordinates\nx_geo, y_geo = pixel_to_geo(500, 500, geotransform)\nprint(f\"Geographic Coordinates: (W {x_geo} , N {y_geo})\")\n\nGeographic Coordinates: (W -110.86277777808898 , N 34.862777778065904)\n\n\n\n## close dataset\n\ndataset = None",
+    "crumbs": [
+      "Home",
+      "Python Tutorials",
+      "Python Geospatial Notebooks",
+      "Introduction to GDAL"
+    ]
+  },
+  {
+    "objectID": "Python Geospatial Notebooks/Intro_to_GDAL.html#export-raster-as-cloud-optimized-geotiff-cog",
+    "href": "Python Geospatial Notebooks/Intro_to_GDAL.html#export-raster-as-cloud-optimized-geotiff-cog",
+    "title": "Introduction to GDAL",
+    "section": "5.4 Export raster as Cloud-optimized-geotiff COG",
+    "text": "5.4 Export raster as Cloud-optimized-geotiff COG\nWhat are COGs and Why should I care?\nA Cloud Optimized GeoTIFF (COG) is a type of GeoTIFF file that has been optimized for efficient access and use in cloud-based environments. It allows users to access and stream portions of the data without needing to download the entire file, making it ideal for large geospatial datasets used in remote sensing, GIS, and mapping applications. Here are the key features and benefits of a COG:\nKey Features: 1. Internal Tiling:\n\nA COG is internally divided into smaller, equally-sized tiles, which allow for selective access to portions of the image. This structure enables the reading of only the necessary tiles for a particular region or zoom level.\n\n\nPyramidal Layers (Overviews):\n\n\nIt contains lower-resolution overviews or pyramids, which allow for quick access and visualization of the data at multiple zoom levels, much like how online map services work.\n\n\nEfficient Metadata Placement:\n\n\nThe metadata (such as georeferencing information and overviews) is placed at the beginning of the file, allowing clients to read metadata quickly without scanning the entire file. This enhances performance when accessing or visualizing the data in cloud environments.\n\n\nHTTP Range Requests:\n\n\nCOGs are designed to work efficiently over HTTP using range requests, meaning that clients can request specific byte ranges of the file to load only necessary data, rather than downloading the entire file. This is crucial for working with very large datasets in cloud storage.\n\n\nBenefits:\n\nEfficient Data Access:\n\n\nWith a COG, only the relevant parts of the image are accessed (e.g., a specific region or zoom level), which reduces data transfer costs and speeds up analysis in cloud environments like Amazon S3 or Google Cloud Storage.\n\n\nCloud-Friendly:\n\n\nCOGs are ideal for cloud-based workflows, enabling on-the-fly processing and analysis directly from cloud storage without the need for data to be downloaded to a local machine.\n\n\nInteroperability:\n\n\nCOGs are still standard GeoTIFF files, meaning they can be read by most GIS and remote sensing software. However, their cloud-optimized structure makes them more efficient for modern, web-based applications.\n\n\nScalability:\n\n\nSince COGs allow for selective data access, they are highly scalable and work well with very large datasets (hundreds of gigabytes or terabytes in size).\n(description from ChatGPT4o)\n\n\nKey Parameters in gdal.TranslateOptions:\n\n\nformat='COG': Specifies the output format as a Cloud Optimized GeoTIFF. TILING_SCHEME=DEFAULT: Ensures the raster is tiled, which is a key requirement for COG. COMPRESS=LZW: Optional compression (e.g., LZW, DEFLATE, or JPEG), which reduces file size without sacrificing much performance. BLOCKSIZE=512: Defines the tile size for internal tiling. Common sizes are 256 or 512 pixels. OVERVIEWS=IGNORE_EXISTING: Ensures overviews are generated from scratch, which are used to improve performance at different zoom levels. BIGTIFF=IF_SAFER: Ensures the file is saved as a BigTIFF if necessary\n\n\n\n# URL of the .tif file\ntif_url = 'https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1/TIFF/historical/n35w111/USGS_1_n35w111_20240402.tif'\n\n# Open the file using GDAL\ndataset = gdal.Open(tif_url)\n\n# Specify output location and filename\noutput_cog = 'Outputs/output_cog.tif'\n\n# Define the options for creating a COG\ntranslate_options = gdal.TranslateOptions(\n    format='COG',  # Set format to COG\n    creationOptions=[\n        'COMPRESS=LZW',  # Optional: Compression to reduce file size\n        'BLOCKSIZE=512',  # Blocksize for internal tiling (e.g., 512x512 tiles)\n        'OVERVIEWS=IGNORE_EXISTING',  # Use this to generate overviews from scratch\n        'BIGTIFF=IF_SAFER'  # Ensures the file is saved as a BigTIFF if necessary\n    ]\n)\n\n# Create the Cloud Optimized GeoTIFF using gdal.Translate\ngdal.Translate(output_cog, dataset, options=translate_options)\n\nprint(f\"COG created at: {output_cog}\")\n\n# Close the dataset\ndataset = None\n\nCOG created at: Outputs/output_cog.tif",
+    "crumbs": [
+      "Home",
+      "Python Tutorials",
+      "Python Geospatial Notebooks",
+      "Introduction to GDAL"
+    ]
+  }
+]

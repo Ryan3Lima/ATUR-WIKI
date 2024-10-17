@@ -1,0 +1,141 @@
+---
+title: "Arizona Ecohydrology"
+author: "Ryan E. Lima"
+date: "10/16/24"
+---
+
+# Overview
+
+This review of literature focuses on the effects of thinning on forests similar to those found in Northern Arizona
+
+
+**Synthesized text** 
+
+ Forest treatments such as thinning and burning can have significant effects on the hydrologic cycle of forests ([Del Campo et al., 2022](https://linkinghub.elsevier.com/retrieve/pii/S0378112722003188)). 
+ 
+
+
+However the response of forests to treatment are complex, site-specific, forest-type specific and vary with aspect, elevation, treatment-level, post-treatment structure, and climatic conditions ([Del Campo et al., 2022](https://linkinghub.elsevier.com/retrieve/pii/S0378112722003188);[Biederman et al., 2022](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2021WR030687);[Zou et al., 2010](https://linkinghub.elsevier.com/retrieve/pii/S0378112709005350)).
+
+Furthermore the relation between forest cover and streamflow reponse is complex and nonlinear ([!Moore and Wondzell, 2005]())
+
+In the lower Colorado River Basin where average annual precipitation is about 330 mm only about 10mm of that precipitation becomes streamflow ([Zou et al., 2010](https://linkinghub.elsevier.com/retrieve/pii/S0378112709005350)).
+
+In the Colorado River Basin there appears to be a precipitation threshold at work. Below ~500mm of annual precipitation, precipitation and runoff may become decoupled ([Biederman et al., 2022](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2021WR030687)) likely because below ~500mm most precipitation is evaporated regardless of forest condition ([!Hibbert 1979]()). 
+
+Thinning moderate to high density forests can  increase water yield by 6.5 - 100mm for several years after forest treatment depending on forest type and pre-treatment density ([Zou et al. 2010](https://linkinghub.elsevier.com/retrieve/pii/S0378112709005350)
+
+Semi-arid forests with high interannual precipitation variability may show effects in wet years when precipitation is greater than ~500mm ([Adams et al., 2012](https://onlinelibrary.wiley.com/doi/10.1002/eco.233)).
+
+
+**Effects of changes in forest structure on hydrology**
+
+
+Reducing canopy cover reduces canopy interception and makes more water available for runoff ([Moreno et al., 2016](https://hess.copernicus.org/articles/20/1241/2016/)) and infiltration ([Del Campo et al., 2022](https://linkinghub.elsevier.com/retrieve/pii/S0378112722003188);[Del Campo et al., 2019](https://linkinghub.elsevier.com/retrieve/pii/S0378112718323533);[Del Campo et al., 2014](http://link.springer.com/10.1007/s10342-014-0805-7);[Garcia-Prats et al., 2018]();[Knoche 2005](https://jem-online.org/index.php/jem/article/view/409)).
+
+Thinning has been shown to increase soil moisture in semi-arid Ponderosa Pine forests--increasing tree growth (BAI) and buffering against the effects of warming temperatures associated with climate change including drought. ([!Rodman et al.,(pre-print)]();([Sankey and Tatum 2022](https://www.nature.com/articles/s41598-022-12982-z));[Belmonte et al., 2022](https://onlinelibrary.wiley.com/doi/10.1002/eco.2406);[Sankey et al., 2021](https://zslpublications.onlinelibrary.wiley.com/doi/10.1002/rse2.186)).
+
+Reductions in forest density can increase recharge ([Moreno et al., 2016](https://hess.copernicus.org/articles/20/1241/2016/);[Wyatt 2013](https://cdm17192.contentdm.oclc.org/digital/collection/p17192coll1/id/476/rec/3))and groundwater levels ([Smerdon et al., 2009](https://cdm17192.contentdm.oclc.org/digital/collection/p17192coll1/id/476/rec/3);[Jutras et al., 2006](https://linkinghub.elsevier.com/retrieve/pii/S0378112706008607);[Stoneman 1993](https://linkinghub.elsevier.com/retrieve/pii/002216949390118S);[Ruprecht et al., 1991](https://linkinghub.elsevier.com/retrieve/pii/0022169491901182)).
+
+Among Catchments where streamflow increased following removal of forest cover, the best predictor of the magnitude of streamflow increase was subsurface storage potential or depth to bedrock ([!Evaristo and McDonnel 2019]())
+
+## **Effects of disturbance on ET**
+
+Post-disturbance water yield will increase based on the assuption that ET will decrease thus making more water available for streamflow ([Adams et al., 2012](https://onlinelibrary.wiley.com/doi/10.1002/eco.233);[!Pugh and Gordon 2013]())
+
+Looked at the effect of nonstand-replacing disturbances on ET ([!Hicke et al., 2015]())
+
+Reduction of canopy cover can increase ET of existing trees, and solar radiation increasing evaporation ([!Biederman et al., 2014]();[!Chen et al., 205]();[!Bennett et al. 2018]()) decreases in post-disturbance ET may be offset by increased soil evaporation increasing net ET ([!Reed et al. 2016]())
+
+
+Post-disturbance soil moisture may increase because of decreased transpiration ([!Concilio et al. 2009]();[!Mikkelson et al 2013]();[!Penn et al 2016]();[!Saksa et al. 2017]();[!Reed et al, 2016]())
+
+
+
+## **Effects of Forest Treatment**
+
+Hydrological processes can be altered significantly through forest thinning but these effects vary with forest type, thinning intensity, and the hydrologic variables of interest ([Del Campo et al., 2022 ](https://linkinghub.elsevier.com/retrieve/pii/S0378112722003188)_Global Review_).
+
+A global review of forest thinning studies found that net precipitation, soil moisture and tree-level water use increases significantly following thinning while decreases in stemflow and transpiration occur. A thinning intensity of 50% of stand density is the threshold over which hydrologic processes are significantly affected. ([Del Campo et al., 2022 ](https://linkinghub.elsevier.com/retrieve/pii/S0378112722003188)_Global Review_).
+
+Wyatt ([!201x]()) conducted a systemic review of 37 studies of how restoration treatments affect water budgets and found that water yeild can increase 10%-35% when 20% or more of a conifer dominated watershed is thinned. Though no universal water yield response to change in forest cover was found thus regional studies are the best predictor of hydrologic response to thinning. 
+
+A synthesis study of all 4FRI treatments found that thinned and burned forests have significantly greater total ecosystem moisture and are thus more resilient to drought and wildfires ([Sankey et al., 2021](https://zslpublications.onlinelibrary.wiley.com/doi/10.1002/rse2.186)). 
+
+
+Thinned forests are better buffered against drought impacts in terms of both soil moisture and tree health ([Sankey and Tatum 2022](https://www.nature.com/articles/s41598-022-12982-z))
+
+Simulation of thinning in the 4FRI area was modeled with the result indicating that forest removal can trigger shifts in hydrological components. Increases in soil evaporation but also groundwater recharge and runoff. Net effect will likely be increases in mean and maximum streamflow particularly in winter months and during El Nino. However thinning can reduce soil hydraulic conductivity and surface soil water storage ([Moreno et al., 2016](https://hess.copernicus.org/articles/20/1241/2016/)). 
+
+
+### **Duration of Thinning Effects on Hydrology**
+
+* Throughfall = 2.6 to 4.3 years
+* Soil Moisture & Transpiration = 3.6 to 8.6 years
+ 
+([Del Campo et al., 2022 ](https://linkinghub.elsevier.com/retrieve/pii/S0378112722003188)_Global Review_).. 
+
+* Soil moisture = 2 years at 25 - 50cm depth (Flagstaff)
+
+([Belmonte et al., 2022](https://onlinelibrary.wiley.com/doi/10.1002/eco.2406)).
+
+
+
+### **Effects of forest thinning and prescribed burning on tree growth**
+
+Even during the most extreme drought in the last 1,200 years, **Ponderoa Pine** sites that were treated with mechanical **thinning or burning** had higher Basal Area Increment increases, or **grew faster** than paired untreated sites in the Southwest USA ([!Rodman et al., 2024 _manuscript in review_](https://onlinelibrary.wiley.com/doi/10.1002/eco.2406)) Del Campo ([2014](http://link.springer.com/10.1007/s10342-014-0805-7)) found similar results in semi-arid mediterranean forests. 
+
+
+### **Effects of forest thinning on soil moisture**
+
+Thinned forests [around Flagstaff] have higher soil moisture at 25 and 50cm in the first two years post-thinning ([Belmonte et al., 2022](https://onlinelibrary.wiley.com/doi/10.1002/eco.2406)). 
+
+Thinning in semi-arid forests around the mediterranian increased antecedant soil moisture and belowground hydrologic processes and increased deep soil moisture by 50mm/year over the control ([Del Campo et al., 2019](https://linkinghub.elsevier.com/retrieve/pii/S0378112718323533))
+
+
+
+### **Effects of forest thinning on groundwater**
+
+A review of studies of Forest Management on groundwater resources found that **a rise in water table can generally be expected following forest thinning** in all forested landscapes ([Smerdon et al., 2009](https://jem-online.org/index.php/jem/article/view/409) _Review_)
+
+A review of 35 studies published from 1971 - 2018 found that **thinning was more effective than clear-cutting in terms of increasing groundwater recharge** due to reduced sublimation and Evaporation. Springs can be effective at moinitoring groundwater recharge effects in Aridland forests ([Schenk et al., 2020](https://linkinghub.elsevier.com/retrieve/pii/S0925857419304252)). 
+
+
+
+### **Effects of thinning on Snow**
+
+The effects of forest thinning and subsequent snowmelt are highly variable, with responses depending on forest structure and local climate, where thinning in dense and taller vegetation generally increases snow retention, thinning in shorter, less dense forests may decrease retention ([Lewis et al., 2023](https://onlinelibrary.wiley.com/doi/10.1002/eco.2580)).
+
+
+In semi-arid forested watersheds, thinning can influence streamflow variability by modifying snowpack accumulation and melt, particularly in wetter years where **thinning can either reduce or increase snow retention based on site-specific conditions**.([Broxton et al., 2023](https://onlinelibrary.wiley.com/doi/10.1111/1752-1688.13147))
+
+
+**Thinning** in semi-arid forested watershed **can significantly impact streamflow by altering snowmelt timing**, with reduce forest cover tending to delay snowmelt at warmer sites while advancing melt at cooler, snowpack-persistent sites ([Dwivendi et al., 2024](https://www.frontiersin.org/articles/10.3389/frwa.2024.1374961/full)). 
+
+
+Thinned forests around Flagstaff have greater snow persistance at 25%-35% canopy cover ([Belmonte et al., 2021](https://www.mdpi.com/2072-4292/13/5/1036))
+
+Thinned forests in Northern Arizona have more snow and soil moisture ([O'Donnell et al., 2021](https://zslpublications.onlinelibrary.wiley.com/doi/10.1002/rse2.186))
+
+Found that thinned and burned vs control forests had varying rates of snowmelt and snow persistence. Canopy cover is most predictive of snow persistance ([Donager et al., 2021](https://linkinghub.elsevier.com/retrieve/pii/S266601722100016X)) 
+
+### **Thresholds in the Literature**
+
+A review of 94 catchment studies showed that significant changes in water yield are correlated to forest growth in forests that recive 600-1200 mm of mean annual precipitation [Bosch and Hewlett, 1982](https://linkinghub.elsevier.com/retrieve/pii/0022169482901172) The caveat being there were not many confierous forests studies in that precipitation range. 
+
+Adams and others [2012](https://onlinelibrary.wiley.com/doi/10.1002/eco.233) hypotheized that where annual precipitaiton exceeds ~500 $mm$ or water yield is dominated by snowmelt, watershed will experience significantly decreased evapotranspiration and increased flows if canopy cover is reduced by over 20%, however their recent observations suggest that in dry forests water ield may decrease. More research is needed. This paper was focused on tree-die off not thinning.
+
+Carroll and others ([2016](https://onlinelibrary.wiley.com/doi/10.1002/eco.1792)) found a threshold hydrologic response when evaluating thinning of a snow-dominated semi-arid Pinyon-Juniper community in the Great Basin. They found that a **positive water yield in thinned plots was only observed when precipitation exceeded 400mm annually** (wet years)
+
+Biederman and others ([2022](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2021WR030687)) suggests that distrubance will have positive inpacts on streamflow for a minimum of several years following disturbance in areas where mean annual precipitation exceeds ~500mm. "Presumably because below 500 mm, most precipitation is evaporated regardless of forest condition ([Hibbert, 1979]())
+
+## **Effects of Fire on water yield**
+
+Goeking and others ([2020](https://academic.oup.com/jof/article/118/2/172/5734757)) reviewed the hydrologic response of stand-replacing and non-stand replacing disturbances and found that post-distrubance streamflow may increase, not change, or even decrease. Nonstand replacing fires---because of increased evaporation from higher subcanopy radiation and increased transpiration from rapid post-disturbance growth can decrease water availability in some cases.
+
+
+Decreases in available water coinicdent with tree morality are generally observed in areas at low latitudes, and on south facing acpects, in areas with high total radiation and high solar radiation. particularly in non-stand replacing disturbances such as drought, and insect-caused mortality ([Goeking et al. 2020](https://academic.oup.com/jof/article/118/2/172/5734757)). 
+
+## **Evapotranspiration**
+
+Based on a study of Freemont Cottonwoods...Different species of trees, and even different genotypes of trees in the same species transpire different amounts of water ([Sankey et al., 2021](https://zslpublications.onlinelibrary.wiley.com/doi/pdfdirect/10.1002/rse2.185))

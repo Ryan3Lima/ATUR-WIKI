@@ -1,7 +1,29 @@
 project:
   type: website
-  output-dir: docs
-
-     
+format:
+  html:
+    theme: sandstone
+    toc: true
+website:
+  title: "ATUR-WRP"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+  sidebar:
+    style: "docked"
+    search: true
+    tools: 
+      - icon: github
+        href: https://github.com/Ryan3Lima/ATUR-WIKI
+      - icon: person-workspace
+        href: https://osf.io/hsq72/?view_only=1d1dfd9606024f368264e2a492ebbe5f
+    contents:        
+      - section: "Python Tutorials"
+        contents: "*.ipynb"
+        
+      - section: "Literature Reviewed"
+        contents: "*y.qmd"
+          
     
 
