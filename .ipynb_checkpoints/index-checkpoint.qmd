@@ -3,7 +3,7 @@ title: Arizona Tri-University Recharge and Water Reliability Project (ATUR-WRP)
 date: "10/16/24"
 ---
 
-
+test
 ## About
 
 Escalating drought over the past two decades has led to growing concerns regarding water quantity and quality for Arizona’s communities. At the request of the Arizona Department of Water Resources, a team of researchers from the University of Arizona (UArizona), Arizona State University (ASU), and Northern Arizona University (NAU) will study locations and methods for protecting and enhancing groundwater recharge across the state.
